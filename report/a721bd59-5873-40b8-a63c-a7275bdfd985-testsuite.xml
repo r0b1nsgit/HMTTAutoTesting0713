@@ -1,0 +1,114 @@
+<ns0:test-suite xmlns:ns0="urn:model.allure.qatools.yandex.ru" start="1594696364086" stop="1594696594671">
+  <name>scripts</name>
+  <labels/>
+  <test-cases>
+    <test-case start="1594696364086" status="failed" stop="1594696372535">
+      <name>test01_mp_login.TestMpLogin.test_mp_login[13812345678-246810-13812345678]</name>
+      <failure>
+        <message>AssertionError: assert '13812345678' == 'Xeon'
+  - 13812345678
+  + Xeon</message>
+        <stack-trace>self = &lt;scripts.test01_mp_login.TestMpLogin object at 0x00000280D5A2D400&gt;, username = '13812345678', code = '246810', expect = '13812345678'
+
+    @pytest.mark.parametrize("username,code,expect", read_yaml("mp_login.yaml"))
+    def test_mp_login(self, username, code, expect):
+        # 通过登陆页面对象调用登陆业务方法
+        self.mp.page_mp_login(username=username, code=code)
+        # 断言
+        try:
+    
+&gt;           assert expect == self.mp.page_get_nickname()
+E           AssertionError: assert '13812345678' == 'Xeon'
+E             - 13812345678
+E             + Xeon
+
+scripts\test01_mp_login.py:36: AssertionError</stack-trace>
+      </failure>
+      <attachments>
+        <attachment source="ee1e78d6-0ba6-4b0b-92af-4821a4842ad7-attachment.png" title="断言失败:" type="image/png"/>
+        <attachment source="189a0707-d48e-49d9-a7e6-8bb62bc815cd-attachment.txt" title="Captured log call" type="text/plain"/>
+      </attachments>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="10940-MainThread"/>
+        <label name="host" value="DESKTOP-5JIEOB5"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1594696374646" status="passed" stop="1594696387387">
+      <name>test02_mp_article.TestMpArticle.test_mp_article[test01-jsc0713_01-\u4eca\u5929\u662f\u4e2a\u597d\u65e5\u5b50-\u65b0\u589e\u6587\u7ae0\u6210\u529f-\u6570\u636e\u5e93]</name>
+      <attachments>
+        <attachment source="5c0da3f5-b0e0-43d6-bcb9-3b0ff4c9d3bb-attachment.txt" title="Captured log setup" type="text/plain"/>
+        <attachment source="31ac77eb-7e0b-418b-be70-26b428ebcdf4-attachment.txt" title="Captured log call" type="text/plain"/>
+      </attachments>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="10940-MainThread"/>
+        <label name="host" value="DESKTOP-5JIEOB5"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1594696389486" status="passed" stop="1594696398424">
+      <name>test03_mis_login.TestMisLogin.test_mis_login[testid-testpwd123-\u7ba1\u7406\u5458]</name>
+      <attachments>
+        <attachment source="99f20d12-c488-470f-8aa1-3f063cba02f7-attachment.txt" title="Captured log call" type="text/plain"/>
+      </attachments>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="10940-MainThread"/>
+        <label name="host" value="DESKTOP-5JIEOB5"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1594696400506" status="passed" stop="1594696419898">
+      <name>test04_mis_audit.TestMidAudit.test_mis_audit</name>
+      <attachments>
+        <attachment source="0fc2bf82-1e76-464e-9968-5785e1c16743-attachment.txt" title="Captured log setup" type="text/plain"/>
+        <attachment source="93d2edcf-9741-48f5-8c0b-615ce76a8ef1-attachment.txt" title="Captured log call" type="text/plain"/>
+      </attachments>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="10940-MainThread"/>
+        <label name="host" value="DESKTOP-5JIEOB5"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1594696421974" status="passed" stop="1594696447353">
+      <name>test05_app_login.TestAppLogin.test_app_login[13812345678-246810]</name>
+      <attachments>
+        <attachment source="f699abbd-f6b5-4b9c-be05-030a67d9a5c4-attachment.txt" title="Captured log call" type="text/plain"/>
+      </attachments>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="10940-MainThread"/>
+        <label name="host" value="DESKTOP-5JIEOB5"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1594696449144" status="passed" stop="1594696594671">
+      <name>test06_app_article.TestAppArticle.test_app_article[linux-centos]</name>
+      <attachments>
+        <attachment source="812087ab-4f0b-4442-a555-267c9b6960ab-attachment.txt" title="Captured log setup" type="text/plain"/>
+        <attachment source="bde71f62-7bb2-43f5-88e9-1d6a07cf9cf3-attachment.txt" title="Captured log call" type="text/plain"/>
+      </attachments>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="10940-MainThread"/>
+        <label name="host" value="DESKTOP-5JIEOB5"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+  </test-cases>
+</ns0:test-suite>
